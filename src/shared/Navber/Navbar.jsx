@@ -24,16 +24,19 @@ const Navbar = () => {
       <li className="hover:text-red-800 transition duration-200 ease-in">
         <NavLink to="/All-Products">PRODUCTS</NavLink>
       </li>
-
-      <li className="hover:text-red-800 transition duration-200 ease-in">
-        <NavLink to="/addproduct">ADD-PRODUCTS</NavLink>
-      </li>
-      <li className="hover:text-red-800 transition duration-200 ease-in">
-        <NavLink to="/myorder">MY-ORDER</NavLink>
-      </li>
       <li className="hover:text-red-800 transition duration-200 ease-in">
         <NavLink>BLOGS</NavLink>
       </li>
+      {user && (
+        <>
+          <li className="hover:text-red-800 transition duration-200 ease-in">
+            <NavLink to="/addproduct">ADD-PRODUCTS</NavLink>
+          </li>
+          <li className="hover:text-red-800 transition duration-200 ease-in">
+            <NavLink to="/myorder">MY-ORDER</NavLink>
+          </li>
+        </>
+      )}
     </>
   );
   return (
@@ -63,10 +66,12 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <img className="w-12" src={logo} alt="" />
-        <a className="btn btn-ghost text-xl xs:mt-8 ">
-          <span className="text-red-600 ">PRIMEPLAY</span> SPORTS
-        </a>
+        <div className="sm:flex">
+          <img className="w-12" src={logo} alt="" />
+          <a className="btn btn-ghost text-xl  ">
+            <span className="text-red-600 ">PRIMEPLAY</span> SPORTS
+          </a>
+        </div>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-3 ">{links}</ul>

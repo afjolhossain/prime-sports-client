@@ -3,7 +3,7 @@ import { GiReturnArrow } from "react-icons/gi";
 
 const Policy = () => {
   return (
-    <div className="text-black grid md:grid-cols-3 max-w-6xl mx-auto py-10">
+    <div className="text-black grid md:grid-cols-3 max-w-6xl mx-auto py-10 px-4">
       <div className="flex items-center gap-2">
         <FaShippingFast className="text-[60px] text-red-800" />
 

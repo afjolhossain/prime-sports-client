@@ -26,11 +26,14 @@ const Product = ({ product }) => {
               Stock Availability :{stockQuantity}
             </p>
           </div>
-          <div className="">
+          <div className="text-white">
             <Link to={`/details/${_id}`}>
-              <div className="badge badge-outline text-black w-full hover:bg-red-900  transition duration-300 ease-in ">
-                See More
-              </div>
+              <button
+                type="submit"
+                className="block bg-red-600 hover:bg-slate-200 hover:text-black transition duration-400 ease-in px-3 text-center w-full py-1 "
+              >
+                See Details
+              </button>
             </Link>
           </div>
         </div>
