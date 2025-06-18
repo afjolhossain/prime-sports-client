@@ -66,12 +66,11 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <div className="sm:flex">
-          <img className="w-12" src={logo} alt="" />
-          <a className="btn btn-ghost text-xl  ">
-            <span className="text-red-600 ">PRIMEPLAY</span> SPORTS
-          </a>
-        </div>
+
+        <img className="w-12" src={logo} alt="" />
+        <a className="btn btn-ghost text-xl  ">
+          <span className="text-red-600 ">PRIMEPLAY</span> SPORTS
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-3 ">{links}</ul>
