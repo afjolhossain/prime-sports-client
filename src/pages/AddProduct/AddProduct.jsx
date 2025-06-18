@@ -23,7 +23,7 @@ const AddProduct = () => {
       processingTime,
       stockQuantity,
     };
-    fetch("http://localhost:5000/products", {
+    fetch("https://prime-play-sports-server.vercel.app/products", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(product),

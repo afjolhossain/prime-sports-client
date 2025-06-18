@@ -29,7 +29,7 @@ const Login = () => {
   return (
     <div className="hero bg-base-200 max-w-7xl mx-auto">
       <div className="md:flex py-6 justify-between gap-4 items-center flex-col lg:flex-row-reverse">
-        <img src={loginImage} className="max-w-md rounded-lg shadow-2xl" />
+        <img src={loginImage} className="max-w-sm rounded-lg shadow-2xl" />
         <div>
           <div className=" text-white p-8 mt-16 space-y-3 rounded-x  bg-gray-800">
             <h1 className="text-2xl font-bold text-center">Login</h1>
@@ -37,7 +37,7 @@ const Login = () => {
               onSubmit={handleLogin}
               noValidate=""
               action=""
-              className="space-y-3"
+              className="space-y-3 w-"
             >
               <div className="space-y-1 text-sm">
                 <label htmlFor="username" className="block">

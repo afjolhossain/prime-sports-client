@@ -35,7 +35,7 @@ const Details = () => {
       image,
       user_email,
     };
-    fetch("http://localhost:5000/buy", {
+    fetch("https://prime-play-sports-server.vercel.app/buy", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(buyData),

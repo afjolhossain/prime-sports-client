@@ -33,7 +33,9 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/products/${params.id}`),
+          fetch(
+            `https://prime-play-sports-server.vercel.app/products/${params.id}`
+          ),
       },
 
       {

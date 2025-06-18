@@ -9,7 +9,9 @@ const MyOrder = () => {
   const [orderData, setorderData] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/buy?email=${user?.email}`)
+    fetch(
+      `https://prime-play-sports-server.vercel.app/buy?email=${user?.email}`
+    )
       .then((res) => res.json())
       .then((data) => {
         setorderData(data);
@@ -27,7 +29,7 @@ const MyOrder = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/buy/${_id}`, {
+        fetch(`https://prime-play-sports-server.vercel.app/buy/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

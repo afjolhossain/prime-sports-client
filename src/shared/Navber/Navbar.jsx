@@ -58,14 +58,14 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-5 gap-2 shadow"
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-10 w-52 p-5 gap-2 shadow"
           >
             {links}
           </ul>
         </div>
         <img className="w-12" src={logo} alt="" />
-        <a className="btn btn-ghost text-xl ">
-          <span className="text-red-600">PRIMEPLAY</span> SPORTS
+        <a className="btn btn-ghost text-xl xs:mt-8 ">
+          <span className="text-red-600 ">PRIMEPLAY</span> SPORTS
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -75,8 +75,10 @@ const Navbar = () => {
       <div className="navbar-end">
         {user ? (
           <>
-            <p className="text-red-400 mr-4">{user.email}</p>
-            <button onClick={handleSignOut}>SignOut</button>
+            <div className=" md:flex text-right">
+              <p className="text-red-400 mr-4">{user.email}</p>
+              <button onClick={handleSignOut}>SignOut</button>
+            </div>
           </>
         ) : (
           <Link to="/login">

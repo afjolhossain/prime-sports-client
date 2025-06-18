@@ -9,7 +9,7 @@ import marquee7 from "../../../assets/marqueeImage/brlog07.png";
 
 const AdMarquee = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-white max-w-screen-xl mx-auto">
       <Marquee pauseOnHover>
         <div className="flex  p-4 h-24  gap-x-20 ">
           <img className="h-10" src={marquee6} alt="" />

@@ -40,7 +40,7 @@ const Register = () => {
     createUser(email, password)
       .then((result) => {
         console.log(result?.user);
-        fetch("http://localhost:5000/user", {
+        fetch("https://prime-play-sports-server.vercel.app/user", {
           method: "POST",
           headers: { "content-type": "application/json" },
           body: JSON.stringify(newUser),
@@ -62,15 +62,15 @@ const Register = () => {
   return (
     <div className="hero bg-base-200 max-w-7xl mx-auto">
       <div className="md:flex py-6 justify-between gap-4 items-center flex-col lg:flex-row-reverse">
-        <img src={registerImage} className="max-w-md rounded-lg shadow-2xl" />
+        <img src={registerImage} className="max-w-sm rounded-lg shadow-2xl" />
         <div>
-          <div className=" text-white p-8 mt-16 space-y-3 rounded-x  bg-gray-800">
+          <div className=" text-white  mt-16 space-y-3 rounded-x  bg-gray-800 py-4">
             <h1 className="text-2xl font-bold text-center">Register</h1>
             <form
               onSubmit={handleRegister}
               noValidate=""
               action=""
-              className="space-y-3 w-full"
+              className="space-y-3 w-96 p-4"
             >
               <div className="space-y-1 text-sm">
                 <label htmlFor="username" className="block">
@@ -113,12 +113,15 @@ const Register = () => {
                   </a>
                 </div>
               </div>
-              <button className=" w-full px-4 py-3  rounded-sm dark:text-gray-50 dark:bg-violet-600">
+              <button className=" w-full   px-4 py-3  rounded-sm dark:text-gray-50 dark:bg-violet-600">
                 Register
               </button>
             </form>
             {error && (
-              <div role="alert" className="alert alert-error">
+              <div
+                role="alert"
+                className="alert alert-error md:w-11/12 mx-auto sm:w-16"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 shrink-0 stroke-current"
@@ -132,7 +135,7 @@ const Register = () => {
                     d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
-                <span>{error}</span>
+                <span className="text-red-950">{error}</span>
               </div>
             )}
             {success && (
@@ -153,8 +156,8 @@ const Register = () => {
                 <span> Registered is successFully </span>
               </div>
             )}
-            <div className="flex items-center pt-4 space-x-1">
-              <div className="flex-1 h-px sm:w-16 dark:bg-gray-300"></div>
+            <div className="flex items-center pt-4 space-x-1 ">
+              <div className="flex-1 h-px sm:w-16 dark:bg-gray-300 "></div>
               <p className="px-3 text-sm dark:text-gray-100">
                 Login with social accounts
               </p>

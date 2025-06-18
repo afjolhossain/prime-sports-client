@@ -6,7 +6,7 @@ const AllServices = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/products")
+    fetch("https://prime-play-sports-server.vercel.app/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
@@ -21,7 +21,11 @@ const AllServices = () => {
             <div>
               <div className=" md:w-72 shadow-md mx-auto">
                 <figure>
-                  <img src={product.image} className="w-72 h-72" alt="Shoes" />
+                  <img
+                    src={product.image}
+                    className="w-72 h-72 mx-auto"
+                    alt="Shoes"
+                  />
                 </figure>
                 <div className="card-body">
                   <h2 className="card-title text-sm">{product.name}</h2>

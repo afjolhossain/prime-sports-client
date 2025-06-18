@@ -8,8 +8,8 @@ import banner3 from "../../../assets/banner-img/Slider-3.jpg";
 const Banner = () => {
   return (
     <Carousel>
-      <div className="hero ">
-        <img src={banner1} alt="" />
+      <div className="hero">
+        <img src={banner1} className="md:w-full sm:w-96" alt="" />
         <div className="md:w-10/12 md:text-start sm:text-center">
           <div className=" space-y-3 flex-col">
             <h1 className=" text-2xl font-bold font-Roboto Slab">

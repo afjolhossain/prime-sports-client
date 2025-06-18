@@ -16,9 +16,9 @@ const Product = ({ product }) => {
     <div>
       <div className=" md:w-72 shadow-md mx-auto">
         <figure>
-          <img src={image} className="w-72 h-72" alt="Shoes" />
+          <img src={image} className="w-72 h-72 mx-auto" alt="Shoes" />
         </figure>
-        <div className="card-body">
+        <div className="card-body mx-auto">
           <h2 className="card-title text-sm">{name}</h2>
           <div className="flex justify-between items-center">
             <p className="font-bold text-red-600 font-sans">Price :$ {price}</p>

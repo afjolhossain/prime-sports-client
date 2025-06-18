@@ -7,7 +7,7 @@ const Products = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/products")
+    fetch("https://prime-play-sports-server.vercel.app/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
@@ -17,7 +17,7 @@ const Products = () => {
       <div className="divider uppercase max-w-md mx-auto mt-8">trending</div>
       <p className="uppercase font-bold text-center text-2xl">new arrival</p>
 
-      <div className="grid md:grid-cols-4 gap-4 py-6">
+      <div className="grid md:grid-cols-4 gap-4 py-6 mx-auto">
         {products.slice(0, 4).map((product) => (
           <Product product={product} key={product._id}></Product>
         ))}
