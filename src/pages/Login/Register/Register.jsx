@@ -61,18 +61,15 @@ const Register = () => {
   };
   return (
     <div className=" bg-white max-w-7xl ">
-      <div
-        className=" max-w-md
-       py-6 mx-auto"
-      >
+      <div className="p-8 ">
         <div>
-          <div className="text-black  mt-16 space-y-3 max-w-md mx-auto bg-stone-100 p-6 ">
+          <div className="text-black mt-16 space-y-3 max-w-md  bg-stone-100 p-6  py-6 mx-auto ">
             <h1 className="text-2xl font-bold text-center">Create Account</h1>
             <form
               onSubmit={handleRegister}
               noValidate=""
               action=""
-              className="space-y-3 w-96 p-4"
+              className="space-y-3 "
             >
               <div className="space-y-1 text-sm">
                 <label htmlFor="username" className="block">

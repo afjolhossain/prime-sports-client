@@ -3,6 +3,7 @@ import img2 from "../../../assets/f.fImage/grid01.jpg";
 import img3 from "../../../assets/f.fImage/grid-5.jpg";
 import img4 from "../../../assets/f.fImage/grid-6.jpg";
 import img5 from "../../../assets/f.fImage/grid-7.jpg";
+import { Link } from "react-router-dom";
 
 const FastAndFurious = () => {
   var settings = {
@@ -37,7 +38,14 @@ const FastAndFurious = () => {
             eu. mattis justo ut nulla.
           </small>
           <br />
-          <button className="btn btn-xs py-4 bg-error">Get Started</button>
+          <Link to="All-Products" className="text-white">
+            <button
+              type="submit"
+              className=" bg-red-600 hover:bg-slate-200 hover:text-black transition duration-400 ease-in px-3 text-center w-40 py-1 mt-4 "
+            >
+              More Products
+            </button>
+          </Link>
           <div className="relative max-w-3xl flex gap-4 py-6 overflow-x-auto">
             <img
               className="h-52 py-1 aspect-video rounded-sm object-cover object-center "

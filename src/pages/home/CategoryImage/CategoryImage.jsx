@@ -3,9 +3,9 @@ import banner2 from "../../../assets/category/grid-2x2.jpg";
 import banner3 from "../../../assets/category/grid-3x2.jpg";
 const CategoryImage = () => {
   return (
-    <div className="md:flex  gap-4 mt-4 p-5 mx-auto  ">
+    <div className="grid md:grid-cols-3 gap-4 px-4">
       <div
-        className="hero h-36"
+        className="hero h-36 "
         style={{
           backgroundImage: `url(${banner1})`,
         }}

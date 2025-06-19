@@ -79,10 +79,8 @@ const Navbar = () => {
       <div className="navbar-end">
         {user ? (
           <>
-            <div className=" md:flex text-right">
-              <p className="text-red-400 mr-4">{user.email}</p>
-              <button onClick={handleSignOut}>SignOut</button>
-            </div>
+            <p className="text-red-400 mr-4">{user.email}</p>
+            <button onClick={handleSignOut}>SignOut</button>
           </>
         ) : (
           <Link to="/login">

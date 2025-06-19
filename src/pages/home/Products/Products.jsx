@@ -14,7 +14,9 @@ const Products = () => {
 
   return (
     <div className="text-black py-12 bg-white ">
-      <div className="divider uppercase text-center mt-8">trending</div>
+      <div className="divider divider-error max-w-xs mx-auto uppercase  text-center mt-8">
+        trending
+      </div>
       <p className="uppercase font-bold text-center text-2xl">new arrival</p>
 
       <div className="grid md:grid-cols-4 gap-4 py-6 mx-auto">

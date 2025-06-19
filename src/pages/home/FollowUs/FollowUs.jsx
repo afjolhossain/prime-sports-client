@@ -7,7 +7,7 @@ import Fimg5 from "../../../assets/followsImage/grid07.jpg";
 const FollowUs = () => {
   return (
     <div className="text-black">
-      <div className="divider divider-neutral text-red-600 text-xs font-bold uppercase max-w-xs mx-auto ">
+      <div className="divider divider-error text-red-600 text-xs font-bold uppercase max-w-xs mx-auto ">
         instashop
       </div>
       <p className="uppercase font-bold text-center text-1xl">

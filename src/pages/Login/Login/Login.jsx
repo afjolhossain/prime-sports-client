@@ -29,7 +29,7 @@ const Login = () => {
     <div className="max-w-7xl mx-auto bg-white">
       <div>
         <div className="py-10 ">
-          <div className=" text-black  mt-16 space-y-3 max-w-md mx-auto bg-stone-100 p-6 ">
+          <div className=" text-black mt-16 space-y-3 max-w-md mx-auto bg-stone-100 p-6 ">
             <h1 className="text-2xl font-bold text-center">Login</h1>
             <form
               onSubmit={handleLogin}
