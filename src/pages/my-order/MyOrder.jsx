@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import useAuth from "../../hooks/UseAuth";
 import logo from "../../assets/logo/logo.png";
 import Swal from "sweetalert2";
-import {} from "react-icons/fa";
+import { } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 const MyOrder = () => {
   const { user } = useAuth();
@@ -49,7 +49,7 @@ const MyOrder = () => {
     });
   };
   return (
-    <div className="bg-black">
+    <div className="bg-white">
       <div className="overflow-x-auto mt-16">
         <div className="flex justify-center items-center">
           <h1 className=" text-center text-3xl py-4">Your Orders </h1>
