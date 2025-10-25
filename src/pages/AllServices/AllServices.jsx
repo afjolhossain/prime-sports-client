@@ -43,7 +43,7 @@ const AllServices = () => {
                         type="submit"
                         className="block bg-red-600 hover:bg-slate-200 hover:text-black transition duration-400 ease-in px-3 text-center w-full py-1 "
                       >
-                        See Details
+                        Buy
                       </button>
                     </Link>
                   </div>

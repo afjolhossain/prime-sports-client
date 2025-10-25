@@ -18,7 +18,7 @@ const Navbar = () => {
   };
   const links = (
     <>
-      <li className="hover:text-red-800 transition duration-200 ease-in">
+      <li className="hover:text-red-800 transition te duration-200 ease-in">
         <NavLink to="/">HOME</NavLink>
       </li>
       <li className="hover:text-red-800 transition duration-200 ease-in">
@@ -40,7 +40,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-black z-10 fixed top-0 ">
+    <div className="navbar  z-10 fixed top-0 bg-white ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -68,8 +68,8 @@ const Navbar = () => {
         </div>
 
         <img className="w-12" src={logo} alt="" />
-        <a className="btn btn-ghost text-xl  ">
-          <span className="text-red-600 ">PRIMEPLAY</span> SPORTS
+        <a className="btn btn-ghost text-xl hidden lg:block  ">
+          <span className="text-red-600 ">PRIMEPLAY</span> <span className="text-yellow-800">SPORTS</span>
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">

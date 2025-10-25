@@ -12,7 +12,7 @@ const Banner = () => {
         <img src={banner1} className="" alt="" />
         <div className=" md:w-10/12 md:text-start sm:text-center p-6 ">
           <div className=" space-y-3  flex-col ">
-            <h1 className="  text-2xl xs:text-1xl font-bold font-Roboto Slab ">
+            <h1 className=" text-white  text-2xl xs:text-1xl font-bold font-Roboto Slab ">
               STRETCHONG IS NEVER DONE
             </h1>
             <p className="text-xs font-thin text-white">
@@ -23,7 +23,7 @@ const Banner = () => {
             <Link to="All-Products">
               <button
                 type="submit"
-                className=" bg-red-600 hover:bg-slate-200 hover:text-black transition duration-400 ease-in px-3 text-center w-40 py-1 mt-4 "
+                className=" bg-red-600 text-white hover:bg-slate-200 hover:text-black transition duration-400 ease-in px-3 text-center w-40 py-1 mt-4 "
               >
                 More Products
               </button>
@@ -35,7 +35,7 @@ const Banner = () => {
         <img src={banner2} className="" alt="" />
         <div className=" md:w-10/12 md:text-end sm:text-center p-6 ">
           <div className=" space-y-3 ">
-            <h1 className=" text-2xl xs:text-1xl font-bold font-Roboto Slab">
+            <h1 className=" text-white text-2xl xs:text-1xl font-bold font-Roboto Slab">
               STRETCHONG IS NEVER DONE
             </h1>
             <p className="text-xs font-thin text-white">
@@ -45,7 +45,7 @@ const Banner = () => {
             <Link to="All-Products">
               <button
                 type="submit"
-                className=" bg-red-600 hover:bg-slate-200 hover:text-black transition duration-400 ease-in px-3 text-center w-40 py-1 mt-4 "
+                className=" text-white bg-red-600 hover:bg-slate-200 hover:text-black transition duration-400 ease-in px-3 text-center w-40 py-1 mt-4 "
               >
                 More Products
               </button>
@@ -68,7 +68,7 @@ const Banner = () => {
             <Link to="All-Products">
               <button
                 type="submit"
-                className=" bg-red-600 hover:bg-slate-200 hover:text-black transition duration-400 ease-in px-3 text-center w-40 py-1 mt-4 "
+                className=" text-white bg-red-600 hover:bg-slate-200 hover:text-black transition duration-400 ease-in px-3 text-center w-40 py-1 mt-4 "
               >
                 More Products
               </button>

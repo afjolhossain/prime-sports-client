@@ -55,7 +55,7 @@ const Details = () => {
       });
   };
   return (
-    <div className="max-w-7xl bg-white">
+    <div className="max-w-7xl bg-white p-4">
       <div className="hero bg-white p-8">
         <div>
           <h1 className="text-2xl font-bold mt-10 text-center  text-black py-5">
@@ -104,7 +104,7 @@ const Details = () => {
                 />
 
                 <button type="submit" className="btn btn-primary w-full">
-                  buy
+                  Order
                 </button>
               </form>
             </div>
